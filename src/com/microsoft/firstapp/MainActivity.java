@@ -1,17 +1,35 @@
 package com.microsoft.firstapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class MainActivity extends Activity {
 
+	
+    private Button btnEnterAty1;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        btnEnterAty1 = (Button) findViewById(R.id.btnAty1);
+        btnEnterAty1.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent(MainActivity.this, Aty1.class);
+				
+				startActivity(i);
+			}
+        });
     }
 
 
@@ -20,6 +38,7 @@ public class MainActivity extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+       
     }
 
     @Override
@@ -33,4 +52,8 @@ public class MainActivity extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+    
+
+    
+    
 }

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="start"
-    tools:context="com.microsoft.firstapp.MainActivity" >
+    tools:context=".MainActivity" >
 
     <ImageView
         android:id="@+id/imageView1"
@@ -25,7 +25,7 @@
         android:textSize="32sp" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnAty1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
