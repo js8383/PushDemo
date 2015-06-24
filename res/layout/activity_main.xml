@@ -1,36 +1,24 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="start"
-    tools:context=".MainActivity" >
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitXY"
-        android:src="@drawable/bg1" />
+    android:background="@drawable/bg4" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/loginHead1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="23dp"
-        android:text="Daily Sports"
-        android:textAppearance="@style/AppBaseTheme"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="32sp" />
+        android:layout_marginTop="90dp"
+        android:text="@string/daily_push"
+        android:textSize="42sp"
+        android:typeface="serif" />
 
-    <Button
-        android:id="@+id/btnAty1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/textView1"
-        android:text="Enter"
-        android:textStyle="normal" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/loginHead1" 
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
 
 </RelativeLayout>
